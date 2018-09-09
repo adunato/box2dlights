@@ -115,9 +115,9 @@ class LightMap {
 			fboWidth = 1;
 		if (fboHeight <= 0)
 			fboHeight = 1;
-		frameBuffer = FrameBuffer.createFrameBuffer(Format.RGBA8888, fboWidth,
+		frameBuffer = new FrameBuffer(Format.RGBA8888, fboWidth,
 				fboHeight, false);
-		pingPongBuffer = FrameBuffer.createFrameBuffer(Format.RGBA8888, fboWidth,
+		pingPongBuffer = new FrameBuffer(Format.RGBA8888, fboWidth,
 				fboHeight, false);
 
 		lightMapMesh = createLightMapMesh();
